@@ -6,7 +6,7 @@ IRDBのハーベストエラーファイル(デフォルト：contents.csv)か�
 
 ## 使い方
 - [「IRDB_error_analysis.py」](https://github.com/hellboy84/IRDB_HrEr/blob/main/IRDB_error_analysis.py)と同じフォルダにエラーファイルをおいて，pyを実行してください。
-- エラーファイルは複数あっても大丈夫です。名前を変更しても大丈夫です。
+- エラーファイル(csv)は複数あっても大丈夫です。名前を変更しても大丈夫です。
 
 ## 動作内容
 - 結果は以下のような内容で「error_analysis_result.txt」として同じフォルダに出力されます。
