@@ -1,5 +1,5 @@
 # IRDB_HrEr
-IRDBのハーベストエラーの結果ファイル(デフォルト：contents.csv)に含まれるエラーパターン種類と各エラーパターン件数のカウント用のPythonファイルです。
+IRDBのハーベストエラーファイル(デフォルト：contents.csv)からエラーパターンごとの件数をカウントするPythonコードです。
 
 ## 使い方
 - [「IRDB_error_analysis.py」](https://github.com/hellboy84/IRDB_HrEr/blob/main/IRDB_error_analysis.py)と同じフォルダにエラーファイルをおいて，pyを実行してください。
