@@ -49,10 +49,19 @@ def extract_error_patterns(message):
     
     return patterns
 
+def get_script_path():
+    """実行環境に応じて適切なスクリプトパスを取得する関数"""
+    try:
+        # 通常のPythonスクリプト実行時
+        return os.path.dirname(os.path.abspath(__file__))
+    except NameError:
+        # Jupyter Notebook等の対話型環境での実行時
+        return os.path.abspath('')
+
 def collect_errors_data():
     """スクリプトと同じディレクトリからエラーデータを収集する関数"""
     # スクリプトファイルのディレクトリを使用
-    script_dir = os.path.dirname(os.path.abspath(__file__))
+    script_dir = get_script_path()
     
     # OAI-IDごとのエラーパターンを記録
     oai_id_patterns = defaultdict(set)
@@ -109,7 +118,7 @@ def main():
             error_counts[error_key] += 1
     
     # 結果をファイルに出力
-    script_dir = os.path.dirname(os.path.abspath(__file__))
+    script_dir = get_script_path()
     output_file = os.path.join(script_dir, "error_analysis_result.txt")
     
     with open(output_file, 'w', encoding='utf-8') as f:
