@@ -5,7 +5,7 @@
 - 202503132252：JupyterNotebook等の対話型実行環境でも動くように修正しました
 
 ## 使い方
-- Pythonの動作する環境でお使いください。
+- Python 3.6以上の動作する環境でお使いください。
 - [「IRDB_error_analysis.py」](https://github.com/hellboy84/IRDB_HrEr/blob/main/IRDB_error_analysis.py)と同じフォルダにエラーファイル(デフォルト:contents.csv)をおいて，pyを実行してください。
 - エラーファイル(csv)は複数あっても大丈夫です。名前を変更しても大丈夫です。
 
