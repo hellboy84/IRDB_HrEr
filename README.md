@@ -8,7 +8,7 @@
 ## 使い方
 - Python 3.6以上が動作する環境でお使いください。
 #### 「レコードエラー(登録エラー)」の場合
-- NIIから送られてきたレコードエラーのファイル(xxx.txt(SJIS))を用意します。
+- NIIから送られてくる？レコードエラーのファイル(xxx.txt(SJIS))を用意します。
 - [「IRDB_error_analysis_recorderror.py」](https://github.com/hellboy84/IRDB_HrEr/blob/main/IRDB_error_analysis_recorderror.py)と同じフォルダにエラーファイル(txt)をおいて，pyを実行してください。
 #### 「項目エラー・ワーニング・項目変換」の場合
 - [IRDB](https://irdb.nii.ac.jp/)にログインし，[マイコンテンツ](https://irdb.nii.ac.jp/usercontents)からエラーファイル(contents.csv(UTF-8))を取得してください。
