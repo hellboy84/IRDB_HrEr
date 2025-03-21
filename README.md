@@ -3,14 +3,14 @@
 
 ## 更新
 - 20250321：[IRDBの初期の登録エラー(レコードエラー)パターンを分析するコード](https://github.com/hellboy84/IRDB_HrEr/blob/main/IRDB_error_analysis_recorderror.py)を追加しました
-- 20250313：JupyterNotebook等の対話型実行環境でも動くように修正しました
+- 20250313：[項目エラー系のファイル分析コード](https://github.com/hellboy84/IRDB_HrEr/blob/main/IRDB_error_analysis.py)をJupyterNotebook等の対話型実行環境でも動くように修正しました
 
 ## 使い方
 - Python 3.6以上が動作する環境でお使いください。
-### 「レコードエラー(登録エラー・ハーベストエラー)」の場合
+#### 「レコードエラー(登録エラー・ハーベストエラー)」の場合
 - NIIから送られてきたレコードエラーのファイル(xxx.txt(SJIS))を用意します。
 - [「IRDB_error_analysis_recorderror.py」](https://github.com/hellboy84/IRDB_HrEr/blob/main/IRDB_error_analysis_recorderror.py)と同じフォルダにエラーファイル(txt)をおいて，pyを実行してください。
-### 「項目エラー・ワーニング・項目変換」の場合
+#### 「項目エラー・ワーニング・項目変換」の場合
 - [IRDB](https://irdb.nii.ac.jp/)にログインし，[マイコンテンツ](https://irdb.nii.ac.jp/usercontents)からエラーファイル(contents.csv(UTF-8))を取得してください。
 - [「IRDB_error_analysis.py」](https://github.com/hellboy84/IRDB_HrEr/blob/main/IRDB_error_analysis.py)と同じフォルダにエラーファイル(csv)をおいて，pyを実行してください。
 - エラーファイル(csv)は複数あっても大丈夫です。名前を変更しても大丈夫です。
