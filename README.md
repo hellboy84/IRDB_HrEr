@@ -2,7 +2,8 @@
 [IRDB](https://irdb.nii.ac.jp/)のハーベストエラーファイルからエラーパターンごとの件数をカウントするPythonコードです。
 
 ## 更新
-- 202503132252：JupyterNotebook等の対話型実行環境でも動くように修正しました
+- 20250321：[IRDBの初期の登録エラー(レコードエラー)パターンを分析するコード](https://github.com/hellboy84/IRDB_HrEr/blob/main/IRDB_error_analysis_recorderror.py)を追加しました
+- 20250313：JupyterNotebook等の対話型実行環境でも動くように修正しました
 
 ## 使い方
 - Python 3.6以上が動作する環境でお使いください。
