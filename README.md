@@ -7,13 +7,18 @@
 
 ## 使い方
 - Python 3.6以上が動作する環境でお使いください。
-- [「IRDB_error_analysis.py」](https://github.com/hellboy84/IRDB_HrEr/blob/main/IRDB_error_analysis.py)と同じフォルダにエラーファイル(デフォルト:contents.csv)をおいて，pyを実行してください。
+### 「レコードエラー(登録エラー・ハーベストエラー)」の場合
+- NIIから送られてきたレコードエラーのファイル(xxx.txt(SJIS))を用意します。
+- [「IRDB_error_analysis_recorderror.py」](https://github.com/hellboy84/IRDB_HrEr/blob/main/IRDB_error_analysis_recorderror.py)と同じフォルダにエラーファイル(txt)をおいて，pyを実行してください。
+### 「項目エラー・ワーニング・項目変換」の場合
+- [IRDB](https://irdb.nii.ac.jp/)にログインし，[マイコンテンツ](https://irdb.nii.ac.jp/usercontents)からエラーファイル(contents.csv(UTF-8))を取得してください。
+- [「IRDB_error_analysis.py」](https://github.com/hellboy84/IRDB_HrEr/blob/main/IRDB_error_analysis.py)と同じフォルダにエラーファイル(csv)をおいて，pyを実行してください。
 - エラーファイル(csv)は複数あっても大丈夫です。名前を変更しても大丈夫です。
 
 ## 動作内容
-- 結果は以下のような内容で「error_analysis_result.txt」として同じフォルダに出力されます。
+- 結果は以下のような内容で「error_analysis_result_recorderror.txt」(レコードエラーの場合)あるいは「error_analysis_result.txt」(項目エラー系の場合)として同じフォルダに出力されます。
 - 以下のエラーは例です。これ以外のエラーも抽出されます。
-- ファイル間でoai-idが重複している場合，重複は削除して計算されます。
+- 項目エラー系でファイル間でoai-idが重複している場合，重複は削除して計算されます。
 - このコードは，予め用意したエラーパターンに合致したものを数えるのではなく，ファイルを確認してエラー報告の構造[...]を持っているものを抽出します。
 - このコードのエラーパターンの抽出やカウントが完璧であることを保証するものではありません。
 - このコードの作成は生成AIのサポートを受けています。
