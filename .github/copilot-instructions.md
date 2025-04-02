@@ -14,7 +14,7 @@
     - ワーニング：対象項目のワーニングです。対応項目を含めてアイテムはIRDBに登録されています。
         - [博士論文] 本文URL(全文)がないため、博士論文提出チェックは実行されませんでした。
     - 項目変換：対象項目を置換しました。対応項目を含めてアイテムはIRDBに登録されていますが、データ修正をお願いします。
-　　    - [作成者姓名] 既定の値に変換しました。 (--- -&gt; )
+        - [作成者姓名] 既定の値に変換しました。 (--- -gt; )
 ## Aggregation Method
 - We want to count these error messages by patterns such as [出版者] to understand the frequency of each pattern.
     - Please omit the content in parentheses () in the error messages.
