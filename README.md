@@ -22,6 +22,7 @@
 - このコードは，予め用意したエラーパターンに合致したものを数えるのではなく，ファイルを確認してエラー報告の構造[...]を持っているものを抽出します。
 - このコードのエラーパターンの抽出やカウントが完璧であることを保証するものではありません。
 - このコードの作成は生成AIのサポートを受けています。
+    - initial instruction is at https://github.com/hellboy84/IRDB_HrEr/blob/main/.github/copilot-instructions.md
 
 ===== エラーパターン別の集計 =====    
     
