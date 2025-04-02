@@ -4,9 +4,9 @@
 - Therefore, we would like to extract the content using Python, analyze the error patterns, and understand the frequency of each occurrence.
 ## Error File Content Description
 - The CSV file is delimited by commas ",".
-- The error messages to be extracted and analyzed are described in the 6th column "Message(メッセージ)" of each data entry.
-- Error messages can be broadly classified into three categories: "Item Registration Error(項目登録エラー)," "Warning(ワーニング)," and "Item Conversion(項目変換)".
-- Within these categories, there are more specific error patterns that follow in brackets []. The examples below are just excerpts.
+- The error messages to be extracted and analyzed are described in the 6th column "メッセージ(Message)" of each data entry.
+- Error messages can be broadly classified into three categories: "項目登録エラー(Item Registration Error)", "ワーニング(Warning)", and "項目変換(Item Conversion)".
+- Within these categories, there are more specific error patterns that follow in brackets [...]. The examples below are just excerpts.
 - Error message patterns include but are not limited to:
     - 項目登録エラー：対象項目のみ削除されてアイテムがIRDBに登録されています。
         - [出版者] 言語に規定値以外の値が設定されています。 (ja-Latn)
@@ -40,7 +40,7 @@
     - ワーニング：対象項目のワーニングです。対応項目を含めてアイテムはIRDBに登録されています。
         - [博士論文] 本文URL(全文)がないため、博士論文提出チェックは実行されませんでした。
     - 項目変換：対象項目を置換しました。対応項目を含めてアイテムはIRDBに登録されていますが、データ修正をお願いします。
-　　    - [作成者姓名] 既定の値に変換しました。 (--- -&gt; )
+　　    - [作成者姓名] 既定の値に変換しました。 (--- -gt; )
 ## 集計方法
 - このようなエラーメッセージを，[出版者] などのパターンごとにカウントして，各パターンの発生数を把握したいです。
     - ただしエラーメッセージ内の()は省略して下さい。
